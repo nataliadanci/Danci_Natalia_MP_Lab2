@@ -32,6 +32,7 @@ namespace Danci_Natalia_MP_Lab2.Pages.Books
                 .Include(b => b.Author)
                 .Include(b => b.Publisher)
                 .Include(b=>b.BookCategories)
+                .ThenInclude(b=>b.Category)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (book == null)
             {
