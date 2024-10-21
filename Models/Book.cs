@@ -13,6 +13,7 @@ namespace Danci_Natalia_MP_Lab2.Models
         public decimal Price { get; set; }
 
         [Display(Name = "Publishing Date")]
+        [DataType(DataType.Date)]
         public DateTime PublishingDate { get; set; }
 
         [Display(Name = "Publisher")]
